@@ -4,7 +4,7 @@
     <list default="true" id="e5b0235e-6d76-4da2-ac33-706f027e4bf8" name="Default" comment="" />
     <ignored path="edshaw.me.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/application_controller.rb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381843340859" ignored="false" />
+    <file path="/application_controller.rb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381855281459" ignored="false" />
     <file path="/routes.rb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381843378017" ignored="false" />
     <file path="/Gemfile" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381843430406" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="27" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+            <state line="10" column="64" selection-start="257" selection-end="257" vertical-scroll-proportion="0.16949153">
               <folding />
             </state>
           </provider>
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="28" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.67087156">
+            <state line="22" column="54" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,9 +63,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -428,13 +428,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="19" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
@@ -444,7 +437,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="28" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.67087156">
+        <state line="22" column="54" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="64" selection-start="257" selection-end="257" vertical-scroll-proportion="0.16949153">
           <folding />
         </state>
       </provider>
