@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EdshawMe</title>
+  <title>Ed Shaw</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<header>
+  <h3> Ed Shaw </h3>
+  <h2> Home </h2>
+</header>
+
+<nav>
+  <h3>Navigation</h3>
+  <h4>Internal</h4>
+  <ul>
+    <li>Home</li>
+    <li>Blog</li>
+    <li>Résumé</li>
+    <li>Contact</li>
+  </ul>
+  <h4>External</h4>
+  <ul>
+    <li>GitHub</li>
+    <li>LinkedIn</li>
+  </ul>
+</nav>
 
 <%= yield %>
 

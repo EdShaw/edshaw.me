@@ -1,0 +1,2 @@
+module Blog::BlogHelper
+end
