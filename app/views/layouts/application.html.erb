@@ -1,35 +1,110 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Ed Shaw</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <%= stylesheet_link_tag "bootstrap.min" %>
+  <style>
+      body {
+          padding-top: 50px;
+          padding-bottom: 20px;
+      }
+  </style>
+  <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+  <!--<link rel="stylesheet" href="css/main.css">-->
+  <%= stylesheet_link_tag "bootstrap-theme.min", "application" %>
+
+  <!--<script src="js/vendor/modernizr-2.6.2.min.js">-->
+  <%= javascript_include_tag "modernizr-2.6.2.min" %>
+
 </head>
 <body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-<header>
-  <h3> Ed Shaw </h3>
-  <h2> Home </h2>
+<header class="jumbotron">
+    <div class="container">
+        <h3> Ed Shaw </h3>
+        <h2> Home </h2>
+    </div>
 </header>
 
-<nav>
-  <h3>Navigation</h3>
-  <h4>Internal</h4>
-  <ul>
-    <li>Home</li>
-    <li>Blog</li>
-    <li>Résumé</li>
-    <li>Contact</li>
-  </ul>
-  <h4>External</h4>
-  <ul>
-    <li>GitHub</li>
-    <li>LinkedIn</li>
-  </ul>
-</nav>
+<div>
+  <nav id="topnav" class="navbar navbar-default" role="navigation">
+    <div>
+      <ul class="nav navbar-nav navbar-header">
+        <li>
+          <a class="navbar-brand">Me</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
 
-<%= yield %>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a>Blog</a></li>
+        <li><a>Résumé</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+</div>
 
+
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+
+      <div class="col-xs-12 col-sm-3 sidebar-offcanvas col-sm-push-9" id="sidebar" role="navigation">
+        <div class="well sidebar-nav">
+          <ul class="nav">
+            <li>More Me</li>
+            <li class="active"><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Careers 2.0</a></li>
+          </ul>
+        </div><!--/.well -->
+      </div>
+
+      <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+          <%= yield %>
+        </div>
+
+    </div>
+</div>
+
+<hr>
+
+<footer>
+  <p>&copy; Ed Shaw - 2013</p>
+</footer>
+</div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<%=j javascript_include_tag "jquery-1.10.1.min" %>')</script>
+
+<!--<script src="js/vendor/bootstrap.min.js"></script>-->
+
+<!--<%= javascript_include_tag "bootstrap.min", "plugins", "application" %>-->
+<%= javascript_include_tag "bootstrap.min", "application" %>
+
+
+
+<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 </body>
-</html>
+
