@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
-  <%= stylesheet_link_tag "bootstrap.min" %>
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
   <style>
       body {
           padding-top: 50px;
@@ -19,10 +19,10 @@
   </style>
   <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
   <!--<link rel="stylesheet" href="css/main.css">-->
-  <%= stylesheet_link_tag "bootstrap-theme.min", "application" %>
+  <%= stylesheet_link_tag "bootstrap-theme.min.css", "application" %>
 
   <!--<script src="js/vendor/modernizr-2.6.2.min.js">-->
-  <%= javascript_include_tag "modernizr-2.6.2.min" %>
+  <%= javascript_include_tag "modernizr-2.6.2.min.js" %>
 
 </head>
 <body>
@@ -38,48 +38,52 @@
 </header>
 
 <div>
-  <nav id="topnav" class="navbar navbar-default" role="navigation">
-    <div>
-      <ul class="nav navbar-nav navbar-header">
-        <li>
-          <a class="navbar-brand">Me</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+    <nav id="topnav" class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div>
+              <ul class="nav navbar-nav">
+                <li>
+                  <div class="navbar-header">
+                      <a class="navbar-brand">Me</a>
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <li><a>Blog</a></li>
-        <li><a>Résumé</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </nav>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <li><a>Blog</a></li>
+                <li><a>Résumé</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
 </div>
 
 
 <div class="container">
     <div class="row row-offcanvas row-offcanvas-right">
 
-      <div class="col-xs-12 col-sm-3 sidebar-offcanvas col-sm-push-9" id="sidebar" role="navigation">
-        <div class="well sidebar-nav">
-          <ul class="nav">
-            <li>More Me</li>
-            <li class="active"><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Careers 2.0</a></li>
-          </ul>
-        </div><!--/.well -->
-      </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 sidebar-offcanvas col-sm-push-9" id="sidebar" role="navigation">
+            <div class="well sidebar-nav">
+              <ul class="nav">
+                <li>More Me</li>
+                <li class="active"><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Careers 2.0</a></li>
+              </ul>
+            </div><!--/.well -->
+        </div>
 
-      <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-          <%= yield %>
+        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+            <%= yield %>
         </div>
 
     </div>
@@ -87,16 +91,15 @@
 
 <hr>
 
-<footer>
+<footer class="container">
   <p>&copy; Ed Shaw - 2013</p>
 </footer>
 </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<%=j javascript_include_tag "jquery-1.10.1.min" %>')</script>
+<script>window.jQuery || document.write('<%=j javascript_include_tag "jquery-1.10.1.min.js" %>')</script>
 
 <!--<script src="js/vendor/bootstrap.min.js"></script>-->
 
-<!--<%= javascript_include_tag "bootstrap.min", "plugins", "application" %>-->
-<%= javascript_include_tag "bootstrap.min", "application" %>
+<%= javascript_include_tag "bootstrap.min.js", "application" %>
 
 
 

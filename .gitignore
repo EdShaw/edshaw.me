@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#Ignore public. All assets should be compiled on the node.
+/public/assets/manifest*
+/public/assets/*
