@@ -1,10 +1,19 @@
 EdshawMe::Application.routes.draw do
+  get "blog/home"
+  get "blog/get"
+  get "blog/getbyid"
+  get "blog/getbyslug"
   get "index/get"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'index#get'
+
+  get 'blog/' => 'blog#home'
+
+  get 'blog/:id' => 'blog#getById'
+  get 'blog/:slug' => 'blog#getBySlug'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
