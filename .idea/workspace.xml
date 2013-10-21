@@ -7,7 +7,7 @@
     <file path="/application_controller.rb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381855281459" ignored="false" />
     <file path="/routes.rb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1382300432934" ignored="false" />
     <file path="/Gemfile" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381843430406" ignored="false" />
-    <file path="/application.html.erb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1382295005853" ignored="false" />
+    <file path="/application.html.erb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1382356236221" ignored="false" />
     <file path="/get.html.erb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381927115043" ignored="false" />
     <file path="/application.css" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1381942528937" ignored="false" />
     <file path="/production.rb" changelist="e5b0235e-6d76-4da2-ac33-706f027e4bf8" time="1382294659972" ignored="false" />
@@ -53,7 +53,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="46" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.7802198">
+            <state line="107" column="97" selection-start="3877" selection-end="3877" vertical-scroll-proportion="0.6703297">
               <folding />
             </state>
           </provider>
@@ -204,6 +204,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="edshaw.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edshaw.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edshaw.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -734,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="46" selection-start="4013" selection-end="4013" vertical-scroll-proportion="0.7802198">
+        <state line="107" column="97" selection-start="3877" selection-end="3877" vertical-scroll-proportion="0.6703297">
           <folding />
         </state>
       </provider>
