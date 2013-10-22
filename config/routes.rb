@@ -8,9 +8,9 @@ EdshawMe::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'index#get'
+  root 'index#get', as: "home"
 
-  get 'blog/' => 'blog#home'
+  get 'blog/' => 'blog#home', as: "blog"
 
   get 'blog/:id' => 'blog#getById'
   get 'blog/:slug' => 'blog#getBySlug'

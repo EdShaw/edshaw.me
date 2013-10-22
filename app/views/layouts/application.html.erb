@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Ed Shaw</title>
+  <title>Ed Shaw<% if content_for?(:title) %> | <%= yield :title %><% end %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
@@ -38,33 +38,7 @@
 </header>
 
 <div>
-    <nav id="topnav" class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div>
-              <ul class="nav navbar-nav">
-                <li>
-                  <div class="navbar-header">
-                      <a class="navbar-brand">Me</a>
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                    </div>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav">
-                <li><a>Blog</a></li>
-                <li><a>Résumé</a></li>
-                <li><a>Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-        </div>
-    </nav>
+    <%= render 'shared/mainmenu' %>
 </div>
 
 
@@ -75,9 +49,9 @@
             <div class="well sidebar-nav">
               <ul class="nav">
                 <li>More Me</li>
-                <li class="active"><a href="#">GitHub</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Careers 2.0</a></li>
+                <li><a href="https://github.com/EdShaw/">GitHub</a></li>
+                <li><a href="http://www.linkedin.com/profile/view?id=267596592">LinkedIn</a></li>
+                <li><a href="http://careers.stackoverflow.com/edshaw">Careers 2.0</a></li>
               </ul>
             </div><!--/.well -->
         </div>
@@ -110,7 +84,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-44915129-1', '<%= request.host %>');
+    ga('create', 'UA-44915129-1', 'edshaw.me');
     ga('send', 'pageview');
 
 </script>
