@@ -35,7 +35,6 @@ EdshawMe::Application.configure do
 
   config.assets.precompile += ['bootstrap.min.css', 'bootstrap-theme.min.css', 'bootstrap.min.js', 'modernizr-2.6.2.min.js', 'jquery-1.10.1.min.js']
 
-
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
