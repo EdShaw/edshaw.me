@@ -45,7 +45,7 @@
 <div class="container">
     <div class="row row-offcanvas row-offcanvas-right">
 
-        <div class="col-xs-10 col-xs-offset-1 col-sm-3 sidebar-offcanvas col-sm-push-9" id="sidebar" role="navigation">
+        <div class="col-xs-12 col-sm-3 col-sm-push-9" id="sidebar" role="navigation">
             <div class="well sidebar-nav">
               <ul class="nav">
                 <li>More Me</li>
@@ -57,17 +57,18 @@
         </div>
 
         <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-            <%= yield %>
+            <div class="content">
+                <%= yield %>
+            </div>
         </div>
-
     </div>
 </div>
 
 <hr>
 
 <footer class="container">
-  <p> <%= request.host %> - &copy; Ed Shaw - 2013 </p>
-  <p>Built with Heroku, Rails, Bootstrap by Twitter, jQuery and Modernizr.</p>
+  <p>edshaw.me - &copy; Ed Shaw - 2013 </p>
+  <p>Built with Heroku, Rails, Bootstrap by Twitter, jQuery and Modernizr. Comments provided by Disqus. </p>
   <p>This site uses Google Analytics to learn more about how people view this site.</p>
 </footer>
 </div> <!-- /container -->
@@ -75,10 +76,6 @@
 <script>window.jQuery || document.write('<%=j javascript_include_tag "jquery-1.10.1.min.js" %>')</script>
 
 <!--<script src="js/vendor/bootstrap.min.js"></script>-->
-<%= javascript_include_tag "bootstrap.min.js", "application" %>
-
-
-
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -87,7 +84,7 @@
 
     ga('create', 'UA-44915129-1', 'edshaw.me');
     ga('send', 'pageview');
-
 </script>
+<%= javascript_include_tag "bootstrap.min.js", "application" %>
 </body>
 
