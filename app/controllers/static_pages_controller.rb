@@ -7,7 +7,4 @@ class StaticPagesController < ApplicationController
     @latestblogpost.post = 2000000000
   end
 
-  def cv
-  end
-
 end
