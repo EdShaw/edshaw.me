@@ -8,17 +8,17 @@ It's written with Ruby on Rails and hosted on Heroku. The blogging system is sel
 
 = Thanks
 The following projects for being awesome:
-*Bootstrap by Twitter
-*Modernizr
-*jQuery
-*Disqus
-*Heroku
-*Rails
+* Bootstrap by Twitter
+* Modernizr
+* jQuery
+* Disqus
+* Heroku
+* Rails
 
 The following people for feedback:
-*Steph!
-*Abi
-*Nicole
+* Steph!
+* Abi
+* Nicole
 
 = Contact
 If you have any questions, email me at edwardshaw9+github@gmail.com.
