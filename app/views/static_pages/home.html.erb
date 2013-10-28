@@ -3,8 +3,10 @@
 <h1>About</h1>
 <p>I am currently studying for a Masters in Computer Science at Oxford University. I love learning new technologies, puzzles and gadgets.</p>
 
+<% if @latestblogpost %>
 <h1>Latest Blog Post</h1>
 <%= render partial: "shared/blogpost", locals:{blog: @latestblogpost, size: "sm"} %>
+<% end %>
 
 <h1> Education and Experience </h1>
 <p> Masters in Computer Science - Oxford University 2010 - 2014</p>

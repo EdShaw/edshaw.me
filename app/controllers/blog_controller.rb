@@ -1,33 +1,17 @@
 class BlogController < ApplicationController
   def home
-
-    latestblog = BlogPost.new
-    latestblog.title = "Hello, World!"
-    latestblog.post = "Hello, World!"
-    latestblog.id = 100
-
-    @latestposts = [latestblog, latestblog]
-
-  end
-
-  def get(id)
-
-    @blog = BlogPost.new
-    @blog.title = "Hello, Test!"
-    @blog.id = 101
-    @blog.post = "japfdsfsdf sdnfksdf psdnf sdkf opsdjfposdj fpsdfpjsdpfj spdjfposdjfnds;fand'sfig nls/d.jgz"
-
-    render "blog/get"
-
+    @latestposts = BlogPost.latest_n(5)
   end
 
   def getById
-    get(params[:id])
-
+    id = params[:id]
+    @blog = BlogPost.find(id)
+    render "blog/get"
   end
 
   def getBySlug
-    get(params[:slug])
-
+    slug = params[:slug]
+    @blog = BlogPost.find_by_slug(slug)
+    render "blog/get"
   end
 end
