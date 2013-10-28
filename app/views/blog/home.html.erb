@@ -1,3 +1,8 @@
-<% @latestposts.each do |post| %>
+<% content_for :title do %>Blog<% end %>
+
+<% if @latestposts.each do |post| %>
 <%= render partial: "shared/blogpost", locals:{blog: post, size: "sm"} %>
+<% end.empty? %>
+<h1>Ed Shaw's Blog</h1>
+<p><strong>Sorry, there's nothing here yet!</strong> Come back soon. :)</p>
 <% end %>
