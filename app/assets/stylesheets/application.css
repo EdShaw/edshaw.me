@@ -33,3 +33,26 @@ header {
     margin-bottom: 15px;
     border-top: 1px solid #dcdcdc;
 }
+
+.blogtitle {
+    font-size: 150%;
+}
+
+.blogdate {
+    font-size: smaller;
+}
+
+.blogauthor {
+    font-size: larger;
+}
+
+.form-elems {
+    list-style-type: none;
+    list-style-position: 0;
+    padding: 0;
+}
+
+.form-elems > li {
+    margin: 10px;
+    margin-left: 0;
+}

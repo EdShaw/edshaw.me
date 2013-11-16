@@ -1,0 +1,7 @@
+<%= form_for @blogpost, url: {action: "create"}, html: {class: "blogpost_form"} do |f| %>
+    <ul class="form-elems">
+        <li><h4>Title</h4><%= f.text_field :title, size: 60 %></li>
+        <li><h4>Post</h4><%= f.text_area :post, size: "80x20" %></li>
+        <li><%= f.submit "Create" %></li>
+    </ul>
+<% end %>

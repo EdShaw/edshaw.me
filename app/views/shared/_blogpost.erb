@@ -1,12 +1,14 @@
-<article class="blogpost">
-    <header class="bloghead">
-        <h2><%=blog.title%></h2>
-        <p><%= link_to (blog.created_at + " <span class='glyphicon glyphicon-link'></span>".html_safe), blog_id_url(id: blog.id) %></p>
+<article class="blogpost panel panel-default">
+    <header class="bloghead panel-heading">
+        <h2 class="blogtitle panel-title"><%= if (blog.title) then blog.title else "No Title" end%></h2>
+        <span class="blogdate"><%= link_to (h(blog.created_at.to_formatted_s(:short)) +raw(" <span class='glyphicon glyphicon-link'></span>")), blog_id_url(id: blog.id) %></span>
     </header>
-    <div class ="blogcontent">
-        <p><%=markdown(blog.post)%></p>
+    <div class ="blogcontent panel-body">
+        <p>
+          <%= markdown(if (blog.post) then blog.post else "####No Content :(" end)%>
+        </p>
+        <footer class = "blogauthor">
+            <p>~ Ed Shaw</p>
+        </footer>
     </div>
-    <footer>
-        <p>~ Ed Shaw</p>
-    </footer>
 </article>

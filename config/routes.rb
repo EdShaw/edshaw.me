@@ -9,8 +9,22 @@ EdshawMe::Application.routes.draw do
 
   get 'blog/' => 'blog#home', as: "blog"
 
-  get 'blog/:id' => 'blog#getById', as: "blog_id"
-  get 'blog/:slug' => 'blog#getBySlug', as: "blog_slug"
+  get 'blog/post/_id:id' => 'blog#getById', as: "blog_id", constraints: {
+      id: /\d+/
+  }
+  get 'blog/post/:slug' => 'blog#getBySlug', as: "blog_slug", constraints: {
+      #slug: /[a-zA-Z0-9]/
+  }
+
+  #scope :constraints => { :protocol => "https" } do
+
+    get 'blog/new' => 'blog#new', as: "blog_new"
+    post 'blog/new' => 'blog#create', as: "blog_create"
+
+  #end
+
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
